@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(uu.jpg);
+  background-size: cover;
+  font-family: roboto;  
+  text-align: left;
+}
+.sub{
+  background-color: yellow;
+  color: black;
+  padding: 5px;
+  border: 1px solid gray;
+}
+p{
+  font-family: roboto;
+  text-align: left;
+}
+h2{
+  font-weight: bold;
+}
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: black;
+}
+.contact .content p {
+  font-weight: 300;
+  color: black;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.contact .contactinfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact .contactinfo .box {
+  position: relative;
+  padding: 60px 0;
+  display: flex;
+}
+.contact .contactinfo .box .icon {
+  min-width: 90px;
+  height: 60px;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40%;
+  font-size: 22px;
+  margin: 40px;
+}
+.contact .contactinfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+
+  flex-direction: column;
+  font-weight: 300;
+}
+.contact .contactinfo .box h3 {
+  font-weight: 200;
+  color: #00bcd4;
+}
+.contactForm {
+  padding-left: 90px;
+}

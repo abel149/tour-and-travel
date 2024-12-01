@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+*{
+   
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+/*header*/
+
+.logo{
+     vertical-align: middle;
+
+}
+.name{
+  padding-left: 2px;
+  font-size: 25px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.container-fluid{
+ background-color: black;
+ 
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 10;
+    color: white;
+    margin-top: 0;
+    padding-top: 0;
+    align-items: center;
+   
+    
+  }
+  .navbar-nav li a {
+     color:white;
+     text-decoration:none;
+  }
+  .navbar-nav li {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 22px;
+    
+}
+#f1,#f2,#f3,#f4,#f5,#f6{
+  display:flex;
+}
+#menub{
+    display: none;
+}
+
+/*------------------------Scroll Bar-----------------------*/
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fde65e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fde02f;
+}
+
+/*
+@media (max-width: 700px) {
+   
+    .navbar-nav{
+      flex-direction: column;
+   
+   
+     /*transform: translatey(-200px);*/
+  /*  }
+  
+
+    .nav-item{
+        display: none;
+    }
+   
+    
+    .menub{
+      display: block;
+  }
+    .navbar-nav  li {
+      width: 100%;
+      
+      text-align: center;
+      margin: 10px;
+      
+      
+    }
+    
+      
+    
+  }
+  #openSidebarMenu:checked ~ #sidebarmenu{
+
+    transform: translate(0px);
+    
+
+}*/
+  .sidebar{
+    
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    z-index: 20;
+    top: 44px;
+    right: 40px;
+    cursor: pointer;
+
+}
+
+   
+
+.spiner{
+    height: 3px;
+    background: #fff;
+    transition: all 0.3s;
+}
+
+.spiner.middle,
+.spiner.bottom{
+    margin-top: 3px;
+}
+
+/*=============================Places===============================*/
+.places-text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .places-text small {
+    font-family: Roboto;
+    color: pink;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  
+  .places-text h2 {
+    font-family: Barlow Condensed;
+    font-size: 55px;
+    color: #191d34;
+    letter-spacing: 1px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    
+    justify-items: center;
+    text-align: center;
+  }
+  
+  .card {
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 80%;
+    height: auto;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .cards .text {
+    padding: 20px;
+    font-family: Barlow Condensed;
+    line-height: 50px;
+  }
+  
+  .cards .card-box {
+    display: flex;
+    flex-flow: row;
+    background-color: #fde02f;
+    font-size: 18px;
+    font-family: Roboto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .cards .time {
+    flex: 1;
+  }
+  
+  .cards .location {
+    flex: 2;
+  }
+  
+  .cards .cost {
+    color: #4cafad;
+    font-size: 20px;
+  }
+  
+  /*------------Zoom in Photos--------------*/
+  .zoom-img {
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+  }
+  
+  .zoom-img .img-card {
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .img-card img {
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
+  }
+  
+  .card:hover .zoom-img img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  /*========place responsivenes=============*/
+@media all and (max-width: 1194px) {
+    .places .card-box p {
+      font-size: 14px;
+    }
+  }
+  
+  @media all and (max-width: 1086px) {
+    .places .cards .text {
+      line-height: 40px;
+    }
+  
+    .cards .text .h2 {
+      font-size: 12px;
+    }
+  
+    .cards .img-card img {
+      height: 260px;
+    }
+  }
+  
+  @media all and (max-width: 974px) {
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+    @media all and (max-width: 700px) {
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 20px;
+      }
+    }
+    .card {
+      width: 300px;
+      height: 500px;
+      margin: auto;
+    }
+}
+
+/*=============================Banner=============================*/
+.banner {
+    background-image: url("https://res.cloudinary.com/dxssqb6l8/image/upload/v1605294054/young-woman-enjoying-beautiful-scenery-of-lago-di-braies-italy-picjumbo-com_aa0fvw.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*overflow: hidden;*/
+    width: 100%;
+    height: 100lvh;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    /*background-size: 100%;*/
+  }
+  
+  .banner-text-item {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner-heading {
+    flex: 1;
+  }
+  
+  .banner-heading h1 {
+    font-size: 100px;
+    font-weight: normal;
+    color: white;
+    font-family: Satisfy;
+  }
+  
+  .banner-text-item .form {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 70%;
+    padding: 1% 2%;
+  }
+  
+  .banner-text-item input,
+  .banner-text-item .date,
+  .banner-text-item .book {
+    padding: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: Roboto;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+  }
+  
+  .banner-text-item input {
+    width: 50%;
+    flex: 2;
+  }
+  
+  .banner-text-item .date {
+    width: 20%;
+    flex: 1;
+  }
+  
+  .banner-text-item .book {
+    width: 20%;
+    flex: 1;
+  }
+  
+  .banner-text-item .book {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px;
+    cursor: pointer;
+    background-color: black;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Barlow Condensed";
+    width: 20%;
+  }
+  
+/*==========================banner Responsive=============================*/
+@media all and (max-width: 1172px) {
+    .banner-text-item .form {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+    }
+  
+    .banner-text-item .form input,
+    .banner-text-item .form .date,
+    .banner-text-item .form a {
+      flex: 1;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+  
+    .banner-text-item .form input {
+      width: 60%;
+    }
+  
+    .banner-text-item .form .date {
+      width: 30%;
+    }
+  
+    .banner-text-item .form .book {
+      width: 10%;
+      font-size: 14px;
+    }
+  
+    .banner-heading h1 {
+      font-size: 60px;
+    }
+  }
+  
+  @media all and (max-width: 1414px) {
+    .banner-text-item .form input {
+      width: 40%;
+    }
+  
+    .banner-text-item .form .date {
+      width: 30%;
+    }
+  
+    .banner-text-item .form .book {
+      width: 20%;
+      font-size: 14px;
+    }
+  }
+  
+/*===============Footer===================*/
+.footer {
+    background-image: url("https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293781/pine-tree_mq2sgp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 670px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 36, 0.8);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .footer .links {
+    position: relative;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .links ul {
+    list-style-type: none;
+  }
+  
+  .links h3 {
+    font-family: Barlow Condensed;
+    font-weight: normal;
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  
+  .links li {
+    font-family: Roboto;
+    cursor: pointer;
+    padding: 15px 0;
+  }
+  
+  .links li:hover {
+    color: #ffa801;
+  }
+  
+  /*=========================footer responsiveness=============*/
+  
+@media all and (max-width: 708px) {
+    .footer {
+      width: 100%;
+      height: 670px;
+      position: relative;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  }
+  

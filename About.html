@@ -1,213 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
-      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
-      crossorigin="anonymous"
-    />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <link rel="stylesheet" href="css/try.css">
-  <style>
-*{
-  margin: 0px;
-  padding:0px;
-  box-sizing: border-box;
-  
-  text-align: left;
-}
-body{
-  background-color: #f2f2f2;
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - JOY Ethiopia</title>
 
-}
-.heading{
-  width:100%;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  margin:20px auto;
-  font-family: roboto;
-}
-.heading h1{
-  font-size: 50px;
-  color:#000;
-  margin-bottom: 25px;
-  position: relative;
-}
-.heading h1::after{
-content: "";
-position: absolute;
-width: 100%;
-height: 4px;
-display: block;
-margin: 0 auto;
-background-color: #4caf50;
-}
-.heading p{
-  font-size: 18px;
-  color:#666;
-  margin-bottom: 35px;
-  padding: 20px;
-}
-.container{
-  width:90%;
-  margin:0 auto;
-  padding:10px 20 px;
+  <!-- Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Satisfy&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
 
-}
-.about{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.about-image{
-  flex:1;
-  margin-right: 40px;
-  overflow: hidden;
-}
-.about-image img{
-  max-width:100%;
-  height:auto;
-  display: block;
-  transition: 0.5s ease;
-}
-.about-image :hover{
-  transform: scale(1.2);
-}
-.about-content{
-  flex:1;
-}
-.about-content h2{
-  font-size: 23px;
-  margin-bottom: 15px;
-  color:#333;
-}
-.about-content p{
-  font-size: 18px;
-  line-height: 1.5;
-  color:#666;
-}
-@media screen and (max-width:768px){
-  .heading{
-    padding:0px 20px;
-  }
-  .heading h1{
-    font-size:36px;
-  }
-  .heading p{
-    font-size: 17px;
-    margin-bottom: 0px;
-  }
-  .container{
-    padding:0px;
-  }
-  .about{
-    padding:20px;
-    flex-direction: column;
-  }
-  .about-image{
-    margin-right: 0px;
-    margin-bottom: 20px;
-  }
-  .about-content p{
-    padding:0px;
-    font-size:16px;
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-  }
-  
-}
-
-
-  </style>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg bg-black navbar-dark">
-    <div class="container-fluid justify-content-center">
-        
-        <ul class="navbar-nav text-center" id="n">
-            <li><a class="navbar-brand" href="#"> 
-                <img class="logo" src="images/t.jpg" style="width:80px;" alt="">
-                </a><span class="name"> JOY Ethiopia </span>
-              
-              </li>
-            
-  <li class="nav-item " id="f1">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item" id="f2">
-            <a class="nav-link" href="Blog.html">Blog</a>
-          </li>
-  
-  <li class="nav-item" id="f3">
-            <a class="nav-link" href="Services.html">Services</a>
-          </li>
-  
-  
-          <li class="nav-item" id="f4">
-            <a class="nav-link" href="feedback.html">Feedback</a>     
-           <li class="nav-item" id="f5">
-            <a class="nav-link" href="Contact.html">Contact Us</a>
-          </li>
-          <li class="nav-item" id="f6">
-            <a class="nav-link" href="About.html">About</a>
-          </li>
-          
-        
-        
-          <div id="menub">
-            <!--<input type="checkbox" id="openSidebarMenu">-->
-            <label class="sidebar">
-              <div class="spiner top"></div>
-              <div class="spiner middle"></div>
-              <div class="spiner bottom"></div>
-            </label>
-          </div> 
-         </li>
-        </u>  
-     </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/t.jpg" style="width:50px; height:50px;" alt="Logo">
+        <span class="name">JOY Ethiopia</span>
+      </a>
+
+      <ul class="navbar-nav" id="n">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="Blog.html">Blog</a></li>
+        <li><a class="nav-link" href="Services.html">Services</a></li>
+        <li><a class="nav-link" href="feedback.html">Feedback</a></li>
+        <li><a class="nav-link" href="Contact.html">Contact Us</a></li>
+        <li><a class="nav-link active" href="About.html">About</a></li>
+      </ul>
+
+      <div id="menub">
+        <label class="sidebar">
+          <div class="spiner top"></div>
+          <div class="spiner middle"></div>
+          <div class="spiner bottom"></div>
+        </label>
+      </div>
     </div>
   </nav>
-<div> 
 
-  <div class="heading">
-    <h1>About US</h1>
+  <!-- About Content -->
+  <div class="about-heading">
+    <h1>About Us</h1>
     <p>
-      Welcome to "JOY Ethiopia," a captivating travel blog dedicated to exploring the rich and diverse landscapes, culture, and history of Ethiopia. Our blog is a virtual journey that takes you through the hidden gems, ancient wonders, and vibrant traditions of this captivating country.
-
-At "JOY Ethiopia," we believe in the power of storytelling to transport readers to new and exciting destinations. Through vivid descriptions, stunning photography, and immersive narratives, we aim to inspire wanderlust and provide invaluable insights into the captivating Ethiopian experience.
-
-Whether you're a seasoned traveler or a curious adventurer, our blog offers a treasure trove of travel information, tips, and recommendations. Uncover the secrets of Ethiopia's vibrant cities, such as Addis Ababa, Gondar, and Lalibela, where ancient history blends seamlessly with modern life. 
-Discover the awe-inspiring landscapes of the Simien Mountains, the Danakil Depression, and the stunning Rift Valley.
-
-Immerse yourself in the rich cultural tapestry of Ethiopia as we delve into the traditions, festivals, and culinary delights that make this country truly unique.
+      Welcome to "JOY Ethiopia," a captivating travel blog dedicated to exploring the rich and diverse landscapes,
+      culture, and history of Ethiopia. Our blog is a virtual journey that takes you through the hidden gems, ancient
+      wonders, and vibrant traditions of this captivating country.
     </p>
   </div>
-<div class="container">
-  <section class="about">
+
+  <div class="about-container">
     <div class="about-image">
-      <img src="images/about.jpg" alt="">
+      <img src="images/about.jpg" alt="About Joy Ethiopia">
     </div>
     <div class="about-content">
       <h2>Travel in the Land of Beauty</h2>
       <p>
-
-So, embark on a virtual journey with us at "Tale of Ethiopia" and let us guide you through the enchanting landscapes, historical wonders, and vibrant culture that make Ethiopia a truly remarkable destination. Let the tales of our adventures ignite your curiosity and inspire you to embark on your own unforgettable journey to the land of ancient marvels and warm hospitality.</p>
+        At "JOY Ethiopia," we believe in the power of storytelling to transport readers to new and exciting
+        destinations. Through vivid descriptions, stunning photography, and immersive narratives, we aim to inspire
+        wanderlust and provide invaluable insights into the captivating Ethiopian experience.
+      </p>
+      <p>
+        Whether you're a seasoned traveler or a curious adventurer, our blog offers a treasure trove of travel
+        information, tips, and recommendations. Uncover the secrets of Ethiopia's vibrant cities, such as Addis Ababa,
+        Gondar, and Lalibela, where ancient history blends seamlessly with modern life.
+      </p>
+      <p>
+        So, embark on a virtual journey with us at "Joy Ethiopia" and let us guide you through the enchanting
+        landscapes, historical wonders, and vibrant culture that make Ethiopia a truly remarkable destination.
+      </p>
     </div>
-  </section>
-</div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footContainer">
+      <div class="socialIcons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footerNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+          <li><a href="Services.html">Services</a></li>
+        </ul>
+      </div>
+      <div class="footerBottom">
+        <p>+(251)9-55-00-77-00</p>
+        <a href="mailto:info@joyethiopia.com">info@joyethiopia.com</a>
+        <p>Copyright &copy; 2024 Designed by <span class="designer">Abel Ashenafi</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="javascript/vav.js"></script>
 </body>
-<script src="javascript/vav.js"></script>
+
 </html>
